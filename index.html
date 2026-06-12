@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eine Einladung für Janina</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+background:#090909;
+color:#f4d58d;
+font-family:Georgia, serif;
+overflow-x:hidden;
+}
+
+section{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:40px;
+text-align:center;
+position:relative;
+}
+
+.hero{
+background:url('IMG_1924.jpeg') center center/cover no-repeat;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.60);
+}
+
+.content{
+position:relative;
+z-index:2;
+max-width:850px;
+}
+
+h1{
+font-size:4rem;
+letter-spacing:10px;
+margin-bottom:20px;
+}
+
+h2{
+font-size:2.2rem;
+margin-bottom:20px;
+}
+
+p{
+font-size:1.2rem;
+line-height:1.8;
+}
+
+.image{
+width:90%;
+max-width:700px;
+border-radius:24px;
+box-shadow:0 0 35px rgba(244,213,141,0.20);
+margin-bottom:25px;
+}
+
+.btn{
+padding:15px 35px;
+border-radius:999px;
+border:1px solid #f4d58d;
+background:transparent;
+color:#f4d58d;
+font-size:1rem;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#f4d58d;
+color:black;
+}
+
+.goldline{
+width:140px;
+height:2px;
+background:#f4d58d;
+margin:25px auto;
+}
+
+.fade{
+opacity:0;
+transform:translateY(30px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+#jazzButton{
+position:fixed;
+top:20px;
+right:20px;
+width:70px;
+height:70px;
+border:none;
+border-radius:50%;
+font-size:32px;
+cursor:pointer;
+z-index:9999;
+
+background:linear-gradient(
+135deg,
+#c89f32,
+#ffd700
+);
+
+box-shadow:
+0 0 20px rgba(255,215,0,.5);
+
+animation:pulse 2s infinite;
+}
+
+#jazzHint{
+position:fixed;
+top:100px;
+right:15px;
+background:rgba(0,0,0,.85);
+padding:12px;
+border-radius:14px;
+max-width:180px;
+font-size:14px;
+z-index:9999;
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.08);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+.sparkle{
+position:fixed;
+font-size:24px;
+pointer-events:none;
+z-index:9999;
+animation:fall 4s linear forwards;
+}
+
+@keyframes fall{
+
+0%{
+transform:translateY(-50px);
+opacity:1;
+}
+
+100%{
+transform:translateY(110vh);
+opacity:0;
+}
+
+}
+
+.final{
+display:none;
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<audio id="jazzMusic">
+<source src="djovan-big-easy-jazz-nights-497006.mp3" type="audio/mpeg">
+</audio>
+
+<button id="jazzButton" onclick="playJazz()">
+🎷
+</button>
+
+<div id="jazzHint">
+🎷 Für die richtige Stimmung hier drücken
+</div>
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="content fade">
+
+<h1>JANINA</h1>
+
+<p>
+Eine Einladung für einen Abend,
+der schon lange überfällig ist.
+</p>
+
+<br>
+
+<a href="#date">
+<button class="btn">
+Einladung öffnen
+</button>
+</a>
+
+</div>
+
+</section>
+
+<section id="date">
+
+<div class="content fade">
+
+<h2>20.06.</h2>
+
+<div class="goldline"></div>
+
+<p>
+17:00 Uhr.
+</p>
+
+<p>
+Du wirst abgeholt.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="content fade">
+
+<img
+src="IMG_3006.jpeg"
+class="image"
+>
+
+<p>
+Ein Tisch wartet bereits auf uns.
+</p>
+
+<p style="margin-top:20px;">
+Der erste Teil des Abends
+ist bereits vorbereitet.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="content fade">
+
+<h2>
+Danach reisen wir
+für ein paar Stunden
+in eine andere Zeit.
+</h2>
+
+<div class="goldline"></div>
+
+<p>
+Mehr wird vorerst nicht verraten.
+</p>
+
+</div>
+
+</section>
+<section>
+
+<div class="content fade">
+
+<p>
+Was du mitbringen musst:
+</p>
+
+<br>
+
+<p>
+• Gute Laune<br>
+• Dein schönstes Lächeln<br>
+• Die Bereitschaft,
+dich überraschen zu lassen
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="content fade">
+
+<img
+src="eb500645-2c54-4e27-a6ca-14b4031ac6be.jpeg"
+class="image"
+>
+
+<p>
+Dresscode:
+</p>
+
+<h2>
+So stilvoll wie immer.
+</h2>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="content fade">
+
+<img
+src="IMG_2920.jpeg"
+class="image"
+>
+
+<h2>
+Eine letzte Frage ...
+</h2>
+
+<br>
+
+<button
+class="btn"
+onclick="acceptInvitation()"
+>
+Selbstverständlich ✨
+</button>
+
+<br><br>
+
+<button
+class="btn"
+onclick="acceptInvitation()"
+>
+Als hätte ich eine Wahl 😏
+</button>
+
+<div
+id="finalMessage"
+class="final"
+>
+
+<h2 style="margin-top:40px;">
+Perfekte Entscheidung.
+</h2>
+
+<div class="goldline"></div>
+
+<p>
+Ich freue mich auf Samstag.
+</p>
+
+<p style="margin-top:20px;">
+Und Janina ...
+</p>
+
+<p>
+Danke für die letzten
+sechs Monate.
+</p>
+
+<p style="margin-top:20px;">
+Auf den nächsten Abend.
+🥂
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+function playJazz(){
+
+const music =
+document.getElementById("jazzMusic");
+
+music.play();
+
+document.getElementById(
+"jazzHint"
+).style.display="none";
+
+for(let i=0;i<60;i++){
+
+let sparkle =
+document.createElement("div");
+
+sparkle.classList.add(
+"sparkle"
+);
+
+sparkle.innerHTML="🎷";
+
+sparkle.style.left =
+Math.random()*100+"vw";
+
+document.body.appendChild(
+sparkle
+);
+
+setTimeout(()=>{
+sparkle.remove();
+},4000);
+
+}
+
+}
+
+function acceptInvitation(){
+
+document.getElementById(
+"finalMessage"
+).style.display="block";
+
+for(let i=0;i<150;i++){
+
+let sparkle =
+document.createElement("div");
+
+sparkle.classList.add(
+"sparkle"
+);
+
+sparkle.innerHTML="✨";
+
+sparkle.style.left =
+Math.random()*100+"vw";
+
+document.body.appendChild(
+sparkle
+);
+
+setTimeout(()=>{
+sparkle.remove();
+},4000);
+
+}
+
+}
+
+const observer =
+new IntersectionObserver(
+entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add(
+"show"
+);
+
+}
+
+});
+
+}
+);
+
+document
+.querySelectorAll(".fade")
+.forEach(el=>{
+
+observer.observe(el);
+
+});
+
+</script>
+
+</body>
+</html>
